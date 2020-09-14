@@ -19,14 +19,27 @@ public class RandomNumbers {
     int randNum2 = (int) ((Math.random() * range) + negNum);
 
     System.out.println("You got a " + randNum1 + " and a " + randNum2);
+    System.out.println("--------------------------------------------------");
 
     //Challenge 2
+    input.nextLine();
     System.out.print("Write an adjective: ");
     String adj = input.nextLine();
-    System.out.print("Write an integer: ");
-    int num = input.nextInt();
-    int days = num * 7;
 
-    System.out.println("A vacation is when you take a trip to some " + adj + " place by yourself or with your family. My ideal vacation lasts for " + num + " weeks or about " + days + " days. I usually ");
+    System.out.print("Write an integer: ");
+    int weeks = input.nextInt();
+    int days = weeks * 7;
+
+    System.out.print("Write a number with decimal places: ");
+    double distance = input.nextDouble();
+
+    input.nextLine();
+    System.out.print("Write a place: ");
+    String place = input.nextLine();
+
+    System.out.print("Write an activity ending in -ing: ");
+    String act = input.nextLine();
+
+    System.out.println("\nA vacation is when you take a trip to some " + adj + " place by yourself or with your family. My ideal vacation lasts for " + weeks + " weeks or about " + days + " days. I usually like to stay " + distance + " miles away from a " + place + ". At the end, I like to spend my last day " + act + ".");
   }
 }
